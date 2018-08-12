@@ -1,5 +1,5 @@
 # InteligenciaComputacional
-Repositório com as contribuições/ atividades da disciplina
+Repositório com as contribuições/ atividades da disciplina Inteligência Computacional - IFCE 2018.2
 
 ## Informações:
 * Pyhton
