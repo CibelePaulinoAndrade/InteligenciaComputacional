@@ -2,8 +2,8 @@
 Repositório com as contribuições/ atividades da disciplina
 
 ## Informações:
-Pyhton
-Portable Python 3.2.5.1
+* Pyhton
+* Portable Python 3.2.5.1
 
 ## Problemas:
 1. Missionários e Canibais 
