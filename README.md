@@ -1,4 +1,4 @@
-# InteligenciaComputacional
+# Inteligencia Computacional
 Repositório com as contribuições/ atividades da disciplina Inteligência Computacional - IFCE 2018.2
 
 ## Informações:
