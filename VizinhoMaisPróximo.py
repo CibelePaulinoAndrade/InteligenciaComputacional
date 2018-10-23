@@ -50,7 +50,6 @@ def calculaAcuracia(setTeste, predicoes):
 	return (certas/float(len(setTeste))) * 100.0
 	
 
-	
 setTreinamento=[]
 setTeste=[]
 divisor = 0.67
