@@ -5,6 +5,9 @@ import random
 import math
 import operator
 
+#	Para carregar o dataset é preciso que o arquivo contido no link abaixo esteja
+#	salvo na mesma pasta do script, com o nome de "iris.data".
+#	https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data 
 def carregarDataset(nomeArquivo, divisor, setTreinamento=[] , setTeste=[]):
 	with open(nomeArquivo, newline='') as csvfile:
 	    linhas = csv.reader(csvfile)
