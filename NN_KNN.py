@@ -81,7 +81,7 @@ setTeste2=[]
 divisor = 0.67
 carregarDataset('iris.data', divisor, setTreinamento2, setTeste2)
 print ('Set de treinamento KNN: ' + repr(len(setTreinamento2)))
-print ('Set de teste KNN: ' + repr(len(setTeste)))
+print ('Set de teste KNN: ' + repr(len(setTeste2)))
 
 predicoes2 = []
 for x in range(len(setTeste2)):
