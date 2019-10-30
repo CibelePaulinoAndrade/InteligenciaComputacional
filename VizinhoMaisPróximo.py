@@ -9,18 +9,19 @@ import operator
 #	salvo na mesma pasta do script, com o nome de "iris.data".
 #	https://archive.ics.uci.edu/ml/machine-learning-databases/iris/iris.data 
 def carregarDataset(nomeArquivo, divisor, setTreinamento=[] , setTeste=[]):
-	with open(nomeArquivo, 'rb') as csvfile:
+	with open(nomeArquivo, 'rb') as csvfile: #abre um arquivo como csv
 	    linhas = csv.reader(csvfile)
 	    dataset = list(linhas)
 	    for x in range(len(dataset)-1):
 	        for y in range(4):
-	            dataset[x][y] = float(dataset[x][y])
-	        if random.random() < divisor:
-	            setTreinamento.append(dataset[x])
+	            dataset[x][y] = float(dataset[x][y]) #pega do dataset só os 4 primeiros valores, que são os dados das plantas 
+	        if random.random() < divisor: #divide aleatoriamente o dataset em dados de treinamento e dados de teste
+	            setTreinamento.append(dataset[x]) 
 	        else:
 	            setTeste.append(dataset[x])
  
 
+#   Calcula a distância euclidiana entre dois pontos/dados
 def distanciaEuclidiana(ponto1, ponto2, tamanho):
 	distancia = 0
 	for x in range(tamanho):
@@ -28,6 +29,7 @@ def distanciaEuclidiana(ponto1, ponto2, tamanho):
 	return math.sqrt(distancia)
 
  
+#   Calcula o vizinho mais próximo de um dado, aquele que tem a menor distância
 def nearestNeighbor(setTreinamento, instanciaTeste):
 	distancias = []
 	tamanho = len(instanciaTeste)-1
@@ -50,7 +52,6 @@ def calculaAcuracia(setTeste, predicoes):
 	return (certas/float(len(setTeste))) * 100.0
 	
 
-	
 setTreinamento=[]
 setTeste=[]
 divisor = 0.67
